@@ -1,25 +1,118 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  background: transparent;
+  border: none;
+  outline: transparent;
+  cursor: pointer;
+}
+
+:root {
+  font-family: "Open-sans", sans-serif;
+  line-height: 1.5;
+  font-size: 62.5%;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
+  background-color: #FAFAFA;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #F9BA10;
 }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 0.8rem 2rem;
+  box-sizing: border-box;
+}
+.nav img {
+  height: 6rem;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 70%;
+  gap: 2rem;
+}
+.nav ul li {
+  font: 600 1.6rem/2rem "Open-sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 128rem;
+  height: 8rem;
+  margin: 0 auto;
+}
+
+a {
+  color: #2E2E2E;
+  text-decoration: inherit;
+  transition: all 500ms ease-in-out;
+}
+
 a:hover {
-  color: #535bf2;
+  color: #636363;
 }
 
 body {
@@ -48,12 +141,6 @@ h1 {
   will-change: filter;
   transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
 
 .card {
   padding: 2em;
@@ -74,9 +161,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -84,13 +173,15 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: #2E2E2E;
+    background-color: #FAFAFA;
   }
   a:hover {
-    color: #747bff;
+    color: #636363;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #f0f0f0;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
